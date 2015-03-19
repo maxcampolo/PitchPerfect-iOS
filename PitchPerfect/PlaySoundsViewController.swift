@@ -32,10 +32,6 @@ class PlaySoundsViewController: UIViewController {
     // MARK: - Helper
     
     func loadAVPlayer() {
-        //var soundFile = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")!, isDirectory: false)
-        // Can also just declare this dynamically as string and won't have to use ! for unwrapped optional
-        //var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
-        //var filePathURL = NSURL.fileURLWithPath(filePath)
         
         var error:NSError?
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathURL, error: &error);
